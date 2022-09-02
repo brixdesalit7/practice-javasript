@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+
+<script>
+    const companies = [
+    {name: "Company One", category: "Finance", start: 1981, end: 2004},
+    {name: "Company Two", category: "Retail", start: 1992, end: 2008},
+    {name: "Company Three", category: "Auto", start: 1999, end: 2007},
+    {name: "Company Four", category: "Retail", start: 1989, end: 2010},
+    {name: "Company Five", category: "Technology", start: 2009, end: 2014},
+    {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+    {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+    {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
+    {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
+];
+
+    const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+    const displayCompanies = [];
+
+    // loop through array
+    ///// FOR LOOP
+    // for(let i = 0; i < companies.length; i++) {
+    //     console.log(companies[i]);
+    // }
+
+    ///// FOREACH METHOD
+    // const getCompanies = ages.forEach((value,index,array) => console.log(value));
+    
+    ///// FILTER METHOD
+    // get the campany that start at 1900 and end at 2010
+    // const getCompanies = companies.filter(function(value, index, array){
+    //     if(value.start >= 1990 && value.end <= 2010) {
+    //         return true;
+    //     }
+    // });
+
+    // get valid drinkers that greater than or equal to 21
+    // const validDrinkers = ages.filter((value, index, array) => value >= 21 ? true : false);
+
+    ///// MAP METHOD 
+    // create new array from company array
+    // const newCompany = companies.map((value, index, array) =>  `${value.name} [${value.start} - ${value.end}]`)
+    // console.log(newCompany);
+
+    // multiply each age by 2
+    // const multiplyAge = ages.map((value, index, array) => value * 2);
+    // console.log(multiplyAge)
+    
+    ///// SORT METHOD
+    // sort age ascending order
+    // const sortAge = ages.sort((a,b) => a - b);
+    // console.log(sortAge);
+
+    // sort age descending order
+    // const descendingAge = ages.sort((a,b) => b - a);
+    // console.log(descendingAge);
+    
+    ///// REDUCE METHOD
+    // get the total sum of ages
+    // const ageSum = ages.reduce(function(total, age) {
+    // return total + age;
+    // }, 0);
+    // console.log(ageSum)
+
+    // // get the total number of end year
+    // const totalYears = companies.reduce(function(total, company) {
+    // return total + company.end;
+    // }, 0);
+    // console.log(totalYears)
+    
+</script>
+</body>
+</html>

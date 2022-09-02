@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Request JSON using Ajax</h1>
+    <ul id="sample"></ul>
+    <script>
+        // let sampleJSON = '{"login":"brixdesalit7","id":89675158,"node_id":"MDQ6VXNlcjg5Njc1MTU4","avatar_url":"https://avatars.githubusercontent.com/u/89675158?v=4","gravatar_id":"","url":"https://api.github.com/users/brixdesalit7","html_url":"https://github.com/brixdesalit7","followers_url":"https://api.github.com/users/brixdesalit7/followers","following_url":"https://api.github.com/users/brixdesalit7/following{/other_user}","gists_url":"https://api.github.com/users/brixdesalit7/gists{/gist_id}","starred_url":"https://api.github.com/users/brixdesalit7/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/brixdesalit7/subscriptions","organizations_url":"https://api.github.com/users/brixdesalit7/orgs","repos_url":"https://api.github.com/users/brixdesalit7/repos","events_url":"https://api.github.com/users/brixdesalit7/events{/privacy}","received_events_url":"https://api.github.com/users/brixdesalit7/received_events","type":"User","site_admin":false,"name":"Bryxx","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":14,"public_gists":0,"followers":0,"following":0,"created_at":"2021-08-28T03:38:46Z","updated_at":"2022-08-30T06:55:17Z"}';
+        // let convertToObject = JSON.parse(sampleJSON);
+        // document.getElementById('sample')
+        // .innerHTML =`${convertToObject.login}, ${convertToObject.id}, ${convertToObject.node_id}` ;
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            // Typical action to be performed when the document is ready:
+            // convert json to javascript object
+            var response = JSON.parse(xhttp.responseText);
+            var output = '';
+            for (const key in response) {
+                output += `<li>${response[key]}</li>`
+            }
+            }
+            document.getElementById('sample').innerHTML = output;
+        };
+        xhttp.open("GET", "response.json", true);
+        xhttp.send();
+   </script>
+</body>
+</html>

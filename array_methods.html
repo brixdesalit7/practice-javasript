@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <p id="arr">Orig Array : </p>
+    <p id="methodArr"></p>
+    <p id="newArr"></p>
+    <script>
+    // array
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const fruits2 = ["Strawberry", "Watermelon", "Pineapple"];
+    document.getElementById('arr').innerHTML = `Orig Array : ${fruits}`;
+
+    //TOSTRING METHOD
+    // converts an array to a string of (comma separated) array values.
+    // fruits.toString();
+    
+    // JOIN METHOD
+    // The join() method also joins all array elements into a string.
+    // you can specify the separator:
+    // fruits.join(' | ');
+    // fruits.join(' * ');
+
+    // POP METHOD
+    // The pop() method removes the last element from an array
+    // The pop() method returns the value that was "popped out":
+    // fruits.pop();
+
+    // PUSH METHOD
+    // The push() method adds a new element to an array (at the end):
+    //  fruits.push('Strawberry');
+    
+    // SHIFT METHOD 
+    // The shift() method removes the first array element and "shifts" all other elements to a lower index.
+    // fruits.shift();
+    
+    // UNSHIFT METHOD
+    // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+    // fruits.unshift("Strawberry");
+
+    // CHANGE ARRAY USING INDEX NUMBER
+    // change the index 0 of array which is banana 
+    // change the value to strawberry
+    // fruits[0] = "Strawberry";   
+    
+    // GET THE LENGTH OF ARRAY
+    // fruits.length;
+    
+    // MERGE TWO ARRAY USING CONCAT
+    const mergeArr = fruits.concat(fruits2);
+    // document.getElementById('newArr').innerHTML = `New Array : ${mergeArr}`;
+    
+    // SPLICE METHOD
+    // first parameter starting position where to insert array
+    // second parameter number of element to remove
+    // third parameter element to to insert
+    // fruits.splice(2,0,"Pineapple","Strawberry");
+
+    // REMOVE ELEMENT USING SPLICE
+    // remove the first two element
+    // fruits.splice(0,2);
+
+    // SLICE METHOD
+    // The slice() method slices out a piece of an array into a new array.
+    // first parameter where to start slice
+    // second parameter where to end slice
+    // slice array starting from index 2
+    const newArr =  fruits.slice(1,3);
+    document.getElementById('newArr').innerHTML = `New Array : ${newArr}`;
+
+    // document.getElementById('newArr').innerHTML = `New Array : ${fruits}`;
+    </script>
+</body>
+</html>

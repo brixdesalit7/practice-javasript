@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sample"></p>
+    <script>
+        const text = 'Lorem, ipsum dolor sit amet, consectetur, sit adipisicing ,elit';
+
+        // GET THE LENGTH OF STRING
+        // console.log(text.length);
+    
+        // SLICE METHOD
+        // The method takes 2 parameters: the start position, and the end position (end not included).
+        // console.log(text.slice(0,5));
+        // If a parameter is negative, the position is counted from the end of the string.
+        // console.log(text.slice(-5, -1));
+
+        // REPLACE METHOD
+        // The replace() method replaces a specified value with another value in a string
+        // console.log(text.replace('Lorem', 'Hello'));
+
+        // TOUPPERCASE METHOD
+        // convert string to upper case
+        // console.log(text.toUpperCase());
+
+        // TOLOWERCASE METHOD
+        // convert string to lower case
+        // console.log(text.toLowerCase());
+
+        // CONCAT METHOD
+        // join two string or more
+        // const text2 = "Hello!";
+        // console.log(text2.concat(" ", text));
+
+        // TRIM METHOD
+        // trim method removes whitespace from  both side
+        // const text_with_whiteSpaces = "                    Hello        ";
+        // console.log(text_with_whiteSpaces.length);
+        // const remove_whiteSpace = text_with_whiteSpaces.trim();
+        // console.log(remove_whiteSpace.length);
+
+        // TRIMSTART METHOD
+        // remove whitespace form start of a string
+        // const remove_white_from_start = text_with_whiteSpaces.trimStart();
+        // console.log(remove_white_from_start.length);
+
+        // TRIMEND METHOD
+        // remove whitespace from end of a string
+        // const remopve_whitespace_from_end = text_with_whiteSpaces.trimEnd();
+        // console.log(remopve_whitespace_from_end.length);
+        
+        // charAt METHOD
+        // return the position of specified string
+        // console.log(text.charAt(6));
+
+        // charCodeAt METHOD
+        // return the unicode of the character at a specified index
+        // the method returns a UTF-16 code (integer between 0 and 65535)
+        // console.log(text.charCodeAt(6))
+
+        // PROPERTY ACCESS
+        // access string using property access []
+        // console.log(text[0]);
+
+        // SPLIT METHOD
+        // convert string to array
+        // const strToArray = text.split(" , ");
+        // console.log(strToArray);
+
+        // CONSTRUCTOR PROPERTY
+        // return the function that created the string prototype
+        // console.log(text.constructor);
+
+        // ENDSWITH METHOD
+        // return true if a string end with specifed value
+        // console.log(text.endsWith('elit'));
+
+        // INCLUDES METHOD
+        // return true if string contain specified value
+        // console.log(text.includes('Lorem'));
+
+        // INDEXOF METHOD
+        // return the index position of first occurence of string 
+        // console.log(text.indexOf("ipsum"));
+
+        // LASTINDEXOF METHOD
+        // return the index position of last occurence of string
+        // console.log(text.lastIndexOf('sit'));
+
+        // MATCH METHOD
+        // search for a match string
+        // return an array with matches
+        // console.log(text.match(/it/g));
+
+        // REPEAT METHOD
+        //create copies of text
+        // not supported in internet explorer
+        console.log(text.repeat(5));
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A Map holds key-value pairs where the keys can be any datatype
+
+        const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+        ]);
+
+        // SET METHODS 
+        // add new elements to map
+        fruits.set("strawberry", 1000);
+
+        // GET METHODS
+        // get the value of a key in map
+        // console.log(fruits.get("strawberry"));
+
+        // SIZE PROPERTY
+        // get the number of elements in map
+        // console.log(fruits.size);
+
+        // DELETE METHOD
+        // delete the element in map
+        // fruits.delete("strawberry");
+
+        // CLEAR METHOD
+        // clear all elements in map
+        // fruits.clear();
+
+        // HAS METHOD
+        // return true if a key exist in map
+        // console.log(fruits.has("strawberry"))
+
+        // ENTRIES METHOD
+        // get the key, value
+        // return an iterator object with key,values in map
+        // let displayMap = "";
+        // for(const x of fruits.entries()) {
+        //     displayMap += x + " ";
+        // }
+        // console.log(displayMap);
+
+        // KEYS METHOD
+        // get the key
+        // return iterator object with key in map
+        // let displayMap = "";
+        // for(const x of fruits.keys()) {
+        //     displayMap += x + " ";
+        // }
+        // console.log(displayMap);
+
+        // VALUES METHOD
+        // get the values
+        // return iterator object with values in map
+        // let displayMap = "";
+        // for(const x of fruits.values()) {
+        //     displayMap += x + " ";
+        // }
+        // console.log(displayMap);
+
+        console.log(fruits);
+    </script>
+</body>
+</html>

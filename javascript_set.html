@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A JavaScript Set is a collection of unique values.
+        // Each value can only occur once in a Set.
+
+        const fruits = new Set(["apple","banana","oranges"]);
+        
+        // ADD METHOD 
+        // add new values to set
+        // fruits.add('strawberry');
+
+        // DELETE METHOD
+        // remove element from set
+        // fruits.delete("apple");
+
+        // HAS METHOD
+        // return tru if value exist in set
+        // console.log(fruits.has("strawberry"));
+
+        // SIZE PROPERTY
+        console.log(fruits.size)
+
+        // VALUES METHOD
+        // return set iterator
+        console.log(fruits.values());
+
+        // ITERATE TO SET VALUES
+        let setVal = "";
+        for(const n of fruits.values()){
+            setVal += n + ","; 
+        }
+
+        console.log(setVal);
+    </script>
+</body>
+</html>

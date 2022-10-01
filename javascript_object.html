@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // literal object
+        // const phone = {
+        //     // properties
+        //     phone : "ASUS",
+        //     model : "Asus Zenfone Max Pro M1",
+        //     madeIn : "Taiwan",
+        //     version : "",
+
+        //     // methods ()
+        //     phoneInfo : function () {
+        //         return `The phone name is ${this.phone} and the model is ${phone.model} it was made in ${this.madeIn} with a 
+        //         color of ${this.color}`
+        //     },
+
+        //     // getters
+        //     get name () {
+        //         return this.phone;
+        //     },
+
+        //     // setters
+        //     set ver(version) {
+        //         this.version = version
+        //     }
+        // }
+        // // add new properties
+        // // phone.color = "silver";
+
+        // // set the value of version
+        // phone.ver = "Android 10";
+
+        // console.log(phone.version);
+
+        // constructor
+        function Phone(phone,model,madeIn,) {
+            this.phoneName = phone;
+            this.phoneModel = model;
+            this.phonemadeIn = madeIn;
+            this.getPhoneName = function () {
+                return this.phoneName
+            }
+        }
+        // new Object
+        const phoneAsus = new Phone("Asus", "Zenfone 8", "Taiwan");
+        
+        // access object phoneAsus
+        console.log(phoneAsus.getPhoneName());
+    </script>
+</body>
+</html>

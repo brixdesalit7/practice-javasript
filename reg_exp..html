@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // REGULAR EXPRESSION
+
+        let dumTxt = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book'; 
+        
+        let multiLine = `Hello
+        , I am hello`;
+
+        let num = "12345";
+        ///// MODIFIERS 
+
+        // G MODIFIER
+        // find all matches
+        // let pattern = /and/g;
+
+        // I MODIFIER
+        // perform case-insensitive match
+        // let pattern = /AND/ig;
+
+        // M MODIFIER
+        // // perform multi line match
+        // let pattern = /hello/mg;
+        
+        ///// GROUPS
+        
+        // BRACKETS
+
+        // match characters inside brackets
+        // search for charater lo
+        // let pattern = /[lo]/g;
+        // match characters a-z lowercase
+        // let pattern = /[a-z]/g;
+        // match characters A-Z uppercase
+        // let pattern = /[A-Z]/g;
+
+        // ^ match not inside the brackets
+        // search for not l character
+        // let pattern = /[^l]/gi;
+
+        // match numbers
+        // seach number from 1 to 3
+        // let pattern = /[1-3]/g;
+
+        // ^ match not inside the brackets
+        // search for number NOT from 1 to 3
+        // let pattern = /[^1-3]/g;
+
+        // Perform alternative matching ( | )
+        // seach for text or book
+        let pattern = /(text|book)/g;
+
+
+
+        console.log(dumTxt.match(pattern));
+    </script>
+</body>
+</html>
